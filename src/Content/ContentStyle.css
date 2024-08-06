@@ -1,0 +1,98 @@
+/* Base Styles */
+.listunstyled a {
+    color: blue;
+}
+
+.row {
+    background-color: rgba(219, 230, 244, 0.484);
+}
+
+.listunstyled {
+    flex-direction: column;
+    margin: 10px;
+}
+
+.h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.listunstyled li {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.sidebar {
+    background-color: rgba(224, 235, 249, 0.484);
+}
+
+/* Media Queries */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    .listunstyled {
+        margin: 5px;
+    }
+
+    .h2 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .listunstyled li {
+        padding: 8px 4px;
+        font-size: 0.9rem;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .row {
+        background-color: rgba(219, 230, 244, 0.2);
+    }
+
+    .listunstyled {
+        margin: 5px;
+        padding: 0;
+    }
+
+    .h2 {
+        padding: 10px;
+        font-size: 1.25rem;
+    }
+
+    .listunstyled li {
+        padding: 8px 4px;
+        font-size: 0.8rem;
+    }
+
+    .sidebar {
+        padding: 5px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .listunstyled {
+        margin: 0;
+        padding: 0;
+    }
+
+    .h2 {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .listunstyled li {
+        padding: 5px 2px;
+        font-size: 0.7rem;
+    }
+
+    .sidebar {
+        padding: 0;
+    }
+}

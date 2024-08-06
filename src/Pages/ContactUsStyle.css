@@ -1,0 +1,122 @@
+/* Base styles */
+.contact-us {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us form div {
+  margin-bottom: 15px;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-us button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  .contact-us {
+      padding: 15px;
+  }
+
+  .contact-us h1 {
+      font-size: 24px;
+  }
+
+  .contact-us input,
+  .contact-us textarea {
+      padding: 10px;
+  }
+
+  .contact-us button {
+      padding: 12px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .contact-us {
+      padding: 10px;
+      border: none; /* Optional: remove border for smaller screens */
+      box-shadow: none; /* Optional: remove shadow for smaller screens */
+  }
+
+  .contact-us h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+  .contact-us form div {
+      margin-bottom: 12px;
+  }
+
+  .contact-us input,
+  .contact-us textarea {
+      padding: 12px;
+  }
+
+  .contact-us button {
+      padding: 15px;
+      font-size: 16px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .contact-us {
+      padding: 8px;
+  }
+
+  .contact-us h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .contact-us form div {
+      margin-bottom: 10px;
+  }
+
+  .contact-us input,
+  .contact-us textarea {
+      padding: 14px;
+  }
+
+  .contact-us button {
+      padding: 16px;
+      font-size: 14px;
+  }
+}

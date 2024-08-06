@@ -1,0 +1,39 @@
+/* HomePage.css */
+
+.homepage-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .homepage-container h3 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .homepage-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .homepage-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .homepage-container .advantages, .homepage-container .disadvantages {
+    margin-left: 20px;
+  }
+  
+  .homepage-container .advantages li, .homepage-container .disadvantages li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .homepage-container {
+      padding: 10px;
+    }
+  }
+  
