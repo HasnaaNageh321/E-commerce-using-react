@@ -1,10 +1,10 @@
 /* Base styles */
 header {
-    background-image: url('./Ecommerce-Shopping-Infographics.png');
+    background-image: url('e-commerce-.jpg');
     height: 100vh;
     width: 100%;
-    background-size: cover; /* Ensure the background image covers the entire header */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
 }
 
 * {
@@ -12,7 +12,7 @@ header {
 }
 
 .contentHeader {
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,26 +20,26 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensure the header stays above other content */
+    z-index: 1000;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end; /* Align nav items to the right */
+    justify-content: flex-end;
     align-items: center;
-    /* width: 100%; */
+    height: 100%; /* Ensure nav takes the full height of contentHeader */
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin-right: 50px;
+    margin: 0;
     padding: 0;
 }
 
 ul li {
     display: block;
-    padding: 10px;
+    padding: 10px 15px; /* Adjust padding for better spacing */
 }
 
 li a {
@@ -56,22 +56,34 @@ li a:hover {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
     color: black;
     font-size: 30px;
     font-weight: bold;
     font-family: "Dancing Script", cursive;
-    padding-left: 40px;
-
+    margin: 0;
+    padding-left: 20px;
+    transition: color 0.3s ease;
 }
 
-.logo:hover {
+.logo p:hover {
     cursor: pointer;
     color: orange;
 }
 
+.logo i {
+    margin-left: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
 /* Menu Icon */
 .menu-icon {
-    display: none; /* Hide the menu icon by default */
+    display: none;
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
@@ -82,15 +94,16 @@ li a:hover {
     .contentHeader {
         flex-direction: column;
         align-items: flex-start;
+        height: auto; /* Adjust height for small screens */
     }
 
     nav {
         width: 100%;
-        justify-content: flex-start; /* Align nav items to the left on small screens */
+        justify-content: flex-start;
     }
 
     ul {
-        display: none; /* Hide the menu items by default */
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
@@ -99,30 +112,26 @@ li a:hover {
     }
 
     ul.show {
-        display: flex; /* Show the menu items when the 'show' class is added */
+        display: flex;
     }
 
     ul li {
         padding: 5px 0;
     }
 
-    .logo {
+    .logo p {
         font-size: 20px;
         padding-left: 10px;
     }
 
-    li a {
-        font-size: 16px;
-    }
-
     .menu-icon {
-        display: block; /* Show the menu icon */
+        display: block;
     }
 }
 
 /* For very small screens */
 @media (max-width: 480px) {
-    .logo {
+    .logo p {
         font-size: 18px;
         padding-left: 5px;
     }
